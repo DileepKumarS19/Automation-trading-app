@@ -8,8 +8,10 @@
     "@types/node": "^25.2.3"
   },
   "dependencies": {
+    "@types/axios": "^0.14.4",
     "@types/express": "^5.0.6",
     "@types/mongoose": "^5.11.97",
+    "axios": "^1.13.5",
     "db": "*",
     "express": "^5.2.1",
     "mongoose": "^9.2.1"
