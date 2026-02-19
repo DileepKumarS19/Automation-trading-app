@@ -130,7 +130,7 @@ app.post("/workflow", authMiddleware, async (req, res) => {
 
     const {success, data} = CreateWorkflowSchema.safeParse(req.body);
     if(!success){
-        console.log("wrong data");
+       
         res.status(403).json({
             message: "incorrect data",
         })
@@ -222,7 +222,6 @@ app.get("/workflow/:workflowId", authMiddleware, async (req, res) => {
 });
 
 app.get("/workflows", authMiddleware, async(req, res) => {
-    console.log("reached and logged in", req.userId);
     const workflows = await WorkflowModel.find({ userId: req.userId });
     res.json(workflows);
 })  
