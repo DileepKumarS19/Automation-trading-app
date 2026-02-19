@@ -1,6 +1,6 @@
 import axios, { AxiosInstance } from "axios";
 
-const BASE_URL = (import.meta as any)?.env?.VITE_API_URL || "http://localhost:3000";
+const BASE_URL = (import.meta as any)?.env?.VITE_API_URL;
 const TOKEN_KEY = "auth_token";
 
 // Helper to get token for the interceptor
