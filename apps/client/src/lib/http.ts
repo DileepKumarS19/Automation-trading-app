@@ -1,6 +1,6 @@
 import axios, { AxiosInstance } from "axios";
 
-const BASE_URL = (import.meta as any)?.env?.VITE_API_URL;
+const BASE_URL = (import.meta as any)?.env?.VITE_API_URL || "https://trading-backend-58me.onrender.com";
 const TOKEN_KEY = "auth_token";
 
 // Helper to get token for the interceptor
