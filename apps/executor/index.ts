@@ -1,6 +1,7 @@
 import dns from 'node:dns'; // Use the standard import for setServers
 
 dns.setServers(['1.1.1.1', '8.8.8.8']);
+import express from 'express';
 
 // Now connect
 
@@ -53,3 +54,10 @@ async function main() {
 }
 
 main();
+
+
+const app = express();
+app.get("/", (req, res) => res.send("Executor is running"));
+app.listen(process.env.PORT || 3001, () => {
+    console.log("Dummy server listening for Render health checks");
+})
