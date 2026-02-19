@@ -112,7 +112,7 @@ export const Dashboard = () => {
                     </div>
                     <div>
                       <h3 className="text-base font-bold text-slate-900 group-hover:text-indigo-600 transition-colors">
-                        Workflow <span className="font-mono text-sm font-medium opacity-60">#{wf._id.toString().slice(-6)}</span>
+                        Workflow <span className="font-mono text-sm font-medium opacity-60">#{wf._id.toString()}</span>
                       </h3>
                       <div className="flex items-center gap-3 mt-1.5">
                         <span className="flex items-center gap-1 text-xs font-semibold text-slate-400">
