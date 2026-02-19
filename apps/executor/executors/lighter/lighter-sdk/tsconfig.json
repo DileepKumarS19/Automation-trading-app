@@ -33,5 +33,6 @@
   ],
   "filesGlob": [
     "./**/*.ts",
-  ]
+  ],
+  "types": ["bun-types"],
 }
